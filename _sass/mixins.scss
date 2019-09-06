@@ -1,0 +1,7 @@
+$display-break: 1000px;
+
+@mixin large-screen() {
+  @media only screen and (min-width: $display-break) {
+    @content;
+  }
+}

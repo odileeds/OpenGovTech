@@ -2,5 +2,6 @@
 ---
 
 @import "{{ site.theme }}",
+        "mixins",
         "blocks",
         "link_grid";

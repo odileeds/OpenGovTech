@@ -10,3 +10,16 @@
 .manifesto {
   font-size: 1.5em;
 }
+
+iframe {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+#feedback-form {
+  width: 100%;
+  height: 77rem;
+  @include large-screen() {
+    height: 66rem;
+  }
+}

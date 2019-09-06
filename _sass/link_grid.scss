@@ -1,11 +1,3 @@
-$display-break: 1000px;
-
-@mixin large-screen() {
-  @media only screen and (min-width: $display-break) {
-    @content;
-  }
-}
-
 .bg-image {
   $contrast-background: hsla(0, 0%, 0%, 40%);
   * {
