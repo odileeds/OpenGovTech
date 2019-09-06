@@ -1,0 +1,12 @@
+%block {
+  padding: 0.5em 1em;
+}
+
+.call-to-action {
+  @extend %block;
+  background: hsla(45, 100%, 50%, 1)
+}
+
+.manifesto {
+  font-size: 1.5em;
+}

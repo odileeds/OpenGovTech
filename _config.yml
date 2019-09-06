@@ -10,3 +10,5 @@ defaults:
       path: ""
     values:
       layout: page
+
+permalink: /:categories/:year/:month/:day/:title/
