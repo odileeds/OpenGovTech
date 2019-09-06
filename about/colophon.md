@@ -1,4 +1,5 @@
 ---
+title: Colophon
 ---
 # Contribution form
 
