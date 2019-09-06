@@ -4,3 +4,9 @@ description: >
   we are being open with gov tech.
 
 theme: minima
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
