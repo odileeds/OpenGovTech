@@ -1,0 +1,37 @@
+$display-break: 1000px;
+
+@mixin large-screen() {
+  @media only screen and (min-width: $display-break) {
+    @content;
+  }
+}
+
+.bg-image {
+  $contrast-background: hsla(0, 0%, 0%, 40%);
+  * {
+    color: change-color(invert($contrast-background), $alpha: 1);
+    background-color: $contrast-background;
+  }
+}
+
+.link_grid {
+  list-style: none;
+  margin: 0;
+  display: grid;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(15em, auto);
+  @include large-screen() {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  li {
+    border: 0.5rem solid transparent;
+    padding: 1rem;
+    background-position: center;
+    background-size: cover;
+    h1, p { padding: 0.5rem 1rem; } 
+    
+    &:hover {
+      border-color: black;
+    }
+  }
+}
