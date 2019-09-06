@@ -1,5 +1,7 @@
 ---
 ---
+$content-width: 1024px;
+$on-laptop: 800px;
 
 @import "{{ site.theme }}",
         "mixins",

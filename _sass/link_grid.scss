@@ -12,9 +12,7 @@
   display: grid;
   grid-gap: 1em;
   grid-auto-rows: minmax(15em, auto);
-  @include large-screen() {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  grid-template-columns: repeat( auto-fit, minmax(17em, 1fr) );
   li {
     border: 0.5rem solid transparent;
     padding: 1rem;
