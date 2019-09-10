@@ -1,0 +1,71 @@
+.site-nav {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background-color: $background-color;
+  border: 1px solid $grey-color-light;
+  border-radius: 5px;
+
+  .nav-trigger {
+    display: none;
+  }
+
+  label[for="nav-trigger"] {
+    display: block;
+    float: right;
+    z-index: 2;
+    padding: 0.5em;
+    cursor: pointer;
+    .menu-icon {
+      line-height: 0;
+      display: block;
+      margin: 0;
+      > svg {
+        width: 1em;
+        path {
+          fill: $grey-color-dark;
+        }
+      }
+    }
+  }
+
+  input ~ .menu {
+    clear: both;
+    display: none;
+  }
+
+  input:checked ~ .menu {
+    display: block;
+  }
+
+  @include large-screen() {
+    position: initial;
+    float: none;
+    background-color: initial;
+    border: none;
+  
+    label[for="nav-trigger"] {
+      display: none;
+    }
+
+    .menu-icon {
+      display: none;
+    }
+
+    input ~ .menu {
+      display: flex;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin: 0.5em;
+      a {
+        color: $text-color;
+      }
+    }
+  }
+}

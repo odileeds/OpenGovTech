@@ -6,4 +6,5 @@ $on-laptop: 800px;
 @import "{{ site.theme }}",
         "mixins",
         "blocks",
+        "nav",
         "link_grid";
