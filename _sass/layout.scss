@@ -1,0 +1,25 @@
+$page-width: 45rem;
+
+%limit-width {
+  max-width: $page-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  > section[role="main"], > footer {
+    @extend %limit-width;
+  }
+  > header {
+    > h1 {
+      @extend %limit-width;
+      padding: 1em 0;
+    }
+    > nav {
+      @extend %limit-width;
+    }
+  }
+  > section[role="main"] {
+    padding: 1rem;
+  }
+}

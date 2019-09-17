@@ -1,10 +1,9 @@
-.bg-image {
-  $contrast-background: hsla(0, 0%, 0%, 40%);
-  * {
-    color: change-color(invert($contrast-background), $alpha: 1);
-    background-color: $contrast-background;
-  }
+@mixin contrast($contrast-background) {
+  color: change-color(invert($contrast-background), $alpha: 1);
+  background-color: $contrast-background;
 }
+
+$contrast-background: hsla(0, 0%, 0%, 40%);
 
 .link_grid {
   list-style: none;
@@ -18,10 +17,17 @@
     padding: 1rem;
     background-position: center;
     background-size: cover;
-    h1, p { padding: 0.5rem 1rem; } 
+    h1, p {
+      padding: 1rem;
+    }
+    &[style*="background-image"] {
+      * {
+        @include contrast(hsla(0, 0%, 0%, 40%));
+      }
+    }
     
     &:hover {
-      border-color: black;
+      border-color: $black;
     }
   }
 }

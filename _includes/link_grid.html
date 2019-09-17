@@ -8,9 +8,8 @@
       {% capture imageStyle -%}
         background-image: url({{ link.image | relative_url }});
       {%- endcapture %}
-      {% assign imageClass = 'bg-image ' %}
     {% endif %}
-    <li class="{{ imageClass }}" style="{{ imageStyle }}">
+    <li style="{{ imageStyle }}">
       <a href="{{ link.url | default: targetUrl }}">
         <h1>{{ link.title | default: target.title }}</h1>
         <p>{{ link.summary }}</p>
