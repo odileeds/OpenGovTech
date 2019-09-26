@@ -3,7 +3,7 @@ layout: default
 links:
   -
     title: '#OpenGovTech'
-    url: https://odileeds.org/projects/opengovtech/
+    external_url: https://odileeds.org/projects/opengovtech/
     summary: >
       Read all about ODI Leeds focus on Open GovTech.
   -

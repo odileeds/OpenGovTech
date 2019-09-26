@@ -10,7 +10,7 @@
       {%- endcapture %}
     {% endif %}
     <li style="{{ imageStyle }}">
-      <a href="{{ link.url | default: targetUrl }}">
+      <a href="{{ link.external_url | default: targetUrl }}">
         <h1>{{ link.title | default: target.title }}</h1>
         <p>{{ link.summary }}</p>
       </a>
