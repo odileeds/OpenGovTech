@@ -13,4 +13,4 @@ links:
       What defines #OpenGovTech?
 ---
 
-{% include link_grid.html links=page.links %}
+{% include link-grid.html links=page.links %}

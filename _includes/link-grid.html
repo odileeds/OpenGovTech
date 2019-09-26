@@ -1,4 +1,4 @@
-<ul class="link_grid">
+<ul class="link-grid">
   {% for link in include.links %}
     {% if link.page %}
       {% assign target = site.pages | where:"path", link.page | first %}

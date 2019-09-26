@@ -5,7 +5,7 @@
 
 $contrast-background: hsla(0, 0%, 0%, 40%);
 
-.link_grid {
+.link-grid {
   list-style: none;
   margin: 0;
   display: grid;
@@ -17,6 +17,7 @@ $contrast-background: hsla(0, 0%, 0%, 40%);
     padding: 1rem;
     background-position: center;
     background-size: cover;
+    background-color: $white;
     h1, p {
       padding: 1rem;
     }
