@@ -8,6 +8,36 @@ publish_mode: editorial_workflow
 media_folder: images
 
 collections:
+  - name: stories
+    label: Story Blog
+    label_singular: Story
+    folder: _stories
+    extension: md
+    slug: '{{year}}-{{month}}-{{day}}-{{ slug }}'
+    create: true
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: originator
+        label: Originator
+        widget: string
+      - name: external_url
+        label: External URL
+        widget: string
+        required: false
+      - name: date
+        label: Date
+        widget: datetime
+        format: YYYY-MM-DD
+      - name: summary
+        label: Summary
+        widget: string
+        required: false
+      - name: body
+        label: Body
+        widget: markdown
+        required: false
   - name: assets
     label: Assets
     label_singular: Asset
