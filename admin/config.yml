@@ -5,7 +5,7 @@ backend:
   auth_endpoint: prod/auth
 
 publish_mode: editorial_workflow
-media_folder: "assets/images/uploads"
+media_folder: images
 
 collections:
   - name: assets
