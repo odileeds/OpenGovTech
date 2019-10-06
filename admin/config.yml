@@ -8,6 +8,38 @@ publish_mode: editorial_workflow
 media_folder: images
 
 collections:
+  - name: posts # Used in routes, e.g., /admin/collections/posts
+    label: Main Blog # Used in the UI
+    label_singular:  Post
+    folder: _posts/ # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    preview_path_date_field: date
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - label: Title
+        name: title
+        widget: string
+      # - label: Author
+      #   name: author
+      #   widget: relation
+      #   collection: team
+      #   displayFields: display_name
+      #   searchFields: display_name
+      #   valueField: name
+      #   multiple: true
+      - label: Publish Date
+        name: date
+        default: ""
+        widget: datetime
+        dateFormat: LLL
+        timeFormat: false
+      - label: Featured Image
+        required: false
+        name: thumbnail
+        widget: image
+      - label: Body
+        name: body
+        widget: markdown
   - name: stories
     label: Story Blog
     label_singular: Story
@@ -29,7 +61,7 @@ collections:
       - name: date
         label: Date
         widget: datetime
-        format: YYYY-MM-DD
+        dateFormat: L
         timeFormat: false
       - name: summary
         label: Summary
@@ -53,18 +85,23 @@ collections:
       - name: originator
         label: Originator
         widget: string
+        required: false
       - name: external_url
         label: External URL
         widget: string
         required: false
       - name: date_added
         label: Date Added
+        default: ""
         widget: datetime
-        format: YYYY-MM-DD
+        dateFormat: L
+        timeFormat: false
       - name: date_checked
         label: Date Checked
+        default: ""
         widget: datetime
-        format: YYYY-MM-DD
+        dateFormat: L
+        timeFormat: false
         required: false
       - name: summary
         label: Summary
@@ -74,30 +111,6 @@ collections:
         label: Body
         widget: markdown
         required: false
-  # - name: "posts" # Used in routes, e.g., /admin/collections/posts
-  #   label: "Posts" # Used in the UI
-  #   label_singular: Post
-  #   folder: "_posts" # The path to the folder where the documents are stored
-  #   create: true # Allow users to create new documents in this collection
-  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-  #   fields: # The fields for each document, usually in front matter
-  #     - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-  #     - {label: "Title", name: "title", widget: "string"}
-  #     # - label: Author
-  #     #   name: author
-  #     #   widget: relation
-  #     #   collection: team
-  #     #   displayFields: display_name
-  #     #   searchFields: display_name
-  #     #   valueField: name
-  #     #   multiple: true
-  #     - label: "Publish Date"
-  #       name: "date"
-  #       widget: "datetime"
-  #       format: "YYYY-MM-DD"
-  #       hint: Don't change this once set!
-  #     - {label: "Featured Image", required: false, name: "thumbnail", widget: "image"}
-  #     - {label: "Body", name: "body", widget: "markdown"}
   # - name: "draft" # Used in routes, e.g., /admin/collections/blog
   #   label: "Draft" # Used in the UI
   #   folder: "_drafts" # The path to the folder where the documents are stored
