@@ -13,7 +13,7 @@ collections:
     label_singular: Story
     folder: _stories
     extension: md
-    slug: '{{year}}-{{month}}-{{day}}-{{ slug }}'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true
     fields:
       - name: title
@@ -43,7 +43,7 @@ collections:
     label_singular: Asset
     folder: _assets
     extension: md
-    slug: '{{ slug }}'
+    slug: '{{slug}}'
     create: true
     fields:
       - name: title
