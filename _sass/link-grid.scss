@@ -13,7 +13,7 @@ $contrast-background: hsla(0, 0%, 0%, 40%);
   grid-auto-rows: minmax(15em, auto);
   grid-template-columns: repeat( auto-fit, minmax(17em, 1fr) );
   li {
-    border: 0.5rem solid transparent;
+    outline: 0.2rem solid transparent;
     background-color: $white;
     h1, p {
       padding: 1rem;
@@ -30,7 +30,7 @@ $contrast-background: hsla(0, 0%, 0%, 40%);
     }
     
     &:hover {
-      border-color: $black;
+      outline-color: $pop-colour-1;
     }
   }
 }
