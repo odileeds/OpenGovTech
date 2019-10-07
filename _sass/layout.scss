@@ -13,7 +13,7 @@ body {
   > header {
     > h1 {
       @extend %limit-width;
-      padding: 1em 0;
+      padding: 1em 1rem;
     }
     > nav {
       @extend %limit-width;
