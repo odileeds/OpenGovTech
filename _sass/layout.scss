@@ -21,5 +21,8 @@ body {
   }
   > section[role="main"] {
     padding: 1rem;
+    * {
+      padding-bottom: 0.5em;
+    }
   }
 }
