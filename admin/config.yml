@@ -10,7 +10,6 @@ publish_mode: editorial_workflow
 media_folder: images
 
 collections:
-{% include admin/blog.yml %}
   - name: posts2 # Used in routes, e.g., /admin/collections/posts
     label: Main Blog 2 # Used in the UI
     label_singular:  Post
