@@ -21,10 +21,13 @@ $contrast-background: hsla(0, 0%, 0%, 40%);
     h1, p {
       padding: 1rem;
     }
-    &[style*="background-image"] {
-      * {
+    article[style*="background-image"] {
+      width: 100%;
+      height: 100%;
+      > * {
         @include contrast(hsla(0, 0%, 0%, 40%));
       }
+    }
     }
     
     &:hover {
