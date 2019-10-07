@@ -1,3 +1,5 @@
+---
+---
 backend:
   name: github
   repo: odileeds/OpenGovTech
@@ -8,8 +10,9 @@ publish_mode: editorial_workflow
 media_folder: images
 
 collections:
-  - name: posts # Used in routes, e.g., /admin/collections/posts
-    label: Main Blog # Used in the UI
+{% include admin/blog.yml %}
+  - name: posts2 # Used in routes, e.g., /admin/collections/posts
+    label: Main Blog 2 # Used in the UI
     label_singular:  Post
     folder: _posts/ # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
