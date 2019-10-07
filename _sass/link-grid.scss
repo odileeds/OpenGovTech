@@ -14,9 +14,6 @@ $contrast-background: hsla(0, 0%, 0%, 40%);
   grid-template-columns: repeat( auto-fit, minmax(17em, 1fr) );
   li {
     border: 0.5rem solid transparent;
-    padding: 1rem;
-    background-position: center;
-    background-size: cover;
     background-color: $white;
     h1, p {
       padding: 1rem;
@@ -24,6 +21,9 @@ $contrast-background: hsla(0, 0%, 0%, 40%);
     article[style*="background-image"] {
       width: 100%;
       height: 100%;
+      padding: 1rem;
+      background-position: center;
+      background-size: cover;
       > * {
         @include contrast(hsla(0, 0%, 0%, 40%));
       }
