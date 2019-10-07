@@ -13,11 +13,14 @@ It is good to copy.
 Sharing is the way to make local gov more efficient.
 Stand on the shoulders of giants.
 We value shared building blocks more than full solutions.
+We will share: Stories > Techniques > Assets
 
 Make it open, make it better:
 OpenGovTech is not free, its better.
 You cannot steal what is open.
-You can't and won't sell or make money from OpenGovTech.
+You won't (and shouldn't?) make millions from OpenGovTech, but a
+mature community will unlock opportunities and value for all
+organisations that contribute.
 
 For the people, by the people.
 Communicate well, widely, openly.
