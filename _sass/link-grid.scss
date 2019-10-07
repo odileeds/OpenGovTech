@@ -21,10 +21,10 @@ $contrast-background: hsla(0, 0%, 0%, 40%);
     article[style*="background-image"] {
       width: 100%;
       height: 100%;
-      margin: 1rem;
       background-position: center;
       background-size: cover;
       > * {
+        padding: 1rem;
         @include contrast(hsla(0, 0%, 0%, 40%));
       }
     }
