@@ -95,13 +95,13 @@ collections:
         label: Date Added
         default: ""
         widget: datetime
-        dateFormat: L
+        dateFormat: LL
         timeFormat: false
       - name: date_checked
         label: Date Checked
         default: ""
         widget: datetime
-        dateFormat: L
+        dateFormat: LL
         timeFormat: false
         required: false
       - name: summary
