@@ -32,7 +32,7 @@ collections:
         default: ""
         widget: datetime
         format: "YYYY-MM-DD HH:mm:ss Z"
-        dateFormat: LLL
+        dateFormat: LL
         timeFormat: "HH:mm"
       - label: Featured Image
         required: false
@@ -62,7 +62,7 @@ collections:
       - name: date
         label: Date
         widget: datetime
-        dateFormat: L
+        dateFormat: LL
         timeFormat: false
       - name: summary
         label: Summary
