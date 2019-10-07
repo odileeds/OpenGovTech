@@ -9,6 +9,7 @@ $page-width: 45rem;
 body {
   > section[role="main"], > footer {
     @extend %limit-width;
+    padding: 1rem;
   }
   > header {
     > h1 {
@@ -20,7 +21,6 @@ body {
     }
   }
   > section[role="main"] {
-    padding: 1rem;
     * {
       padding-bottom: 0.5em;
     }
