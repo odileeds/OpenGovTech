@@ -7,7 +7,7 @@ ODI Leeds attended the FutureGov hosted Designing 21st Century Government event 
 
 We took the opportunity to speak to the attendees about OpenGovTech in the form of a lightning talk and a table discussion.
 
-The lightning talk showed some examples of OpenGovTech that we’ve been working on. It also proposed that adoption of this open way of working enables more time to be spent on the stuff which makes a difference to the service users (without ignoring the technology and data stuff).
+The lightning talk showed some examples of OpenGovTech that we’ve been working on. It also proposed that adoption of this [open way of working enables more time to be spent on the stuff which makes a difference](https://twitter.com/thomasforth/status/1181146515051618304) to the service users (without ignoring the technology and data stuff).
 
 The discussion asked the following questions:
 
