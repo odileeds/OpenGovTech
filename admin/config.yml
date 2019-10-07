@@ -108,6 +108,10 @@ collections:
         label: Summary
         widget: string
         required: false
+      - label: Featured Image
+        required: false
+        name: image
+        widget: image
       - name: body
         label: Body
         widget: markdown
