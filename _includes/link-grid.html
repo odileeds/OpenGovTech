@@ -8,6 +8,8 @@
       {% capture imageStyle -%}
         background-image: url({{ link.image | relative_url }});
       {%- endcapture %}
+    {% else %}
+      {% assign imageStyle = '' %}
     {% endif %}
     <li>
       <a href="{{ link.external_url | default: targetUrl }}">
