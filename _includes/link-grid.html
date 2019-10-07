@@ -9,10 +9,12 @@
         background-image: url({{ link.image | relative_url }});
       {%- endcapture %}
     {% endif %}
-    <li style="{{ imageStyle }}">
+    <li>
       <a href="{{ link.external_url | default: targetUrl }}">
-        <h1>{{ link.title | default: target.title }}</h1>
-        <p>{{ link.summary }}</p>
+        <article class="link" style="{{ imageStyle }}">
+          <h1>{{ link.title | default: target.title }}</h1>
+          <p>{{ link.summary }}</p>
+        </article>
       </a>
     </li>
   {% endfor %}
