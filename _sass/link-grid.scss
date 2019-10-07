@@ -21,7 +21,7 @@ $contrast-background: hsla(0, 0%, 0%, 40%);
     article[style*="background-image"] {
       width: 100%;
       height: 100%;
-      padding: 1rem;
+      margin: 1rem;
       background-position: center;
       background-size: cover;
       > * {
