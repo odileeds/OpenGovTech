@@ -28,7 +28,6 @@ $contrast-background: hsla(0, 0%, 0%, 40%);
         @include contrast(hsla(0, 0%, 0%, 40%));
       }
     }
-    }
     
     &:hover {
       border-color: $black;
