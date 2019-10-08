@@ -1,3 +1,6 @@
+---
+layout: raw
+---
 backend:
   name: github
   repo: odileeds/OpenGovTech
@@ -8,70 +11,9 @@ publish_mode: editorial_workflow
 media_folder: images
 
 collections:
-  - name: posts # Used in routes, e.g., /admin/collections/posts
-    label: Main Blog # Used in the UI
-    label_singular:  Post
-    folder: _posts/ # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    preview_path_date_field: date
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - label: Title
-        name: title
-        widget: string
-      # - label: Author
-      #   name: author
-      #   widget: relation
-      #   collection: team
-      #   displayFields: display_name
-      #   searchFields: display_name
-      #   valueField: name
-      #   multiple: true
-      - label: Publish Date
-        name: date
-        default: ""
-        widget: datetime
-        format: "YYYY-MM-DD HH:mm:ss Z"
-        dateFormat: LL
-        timeFormat: "HH:mm"
-      - label: Featured Image
-        required: false
-        name: thumbnail
-        widget: image
-      - label: Body
-        name: body
-        widget: markdown
-  - name: stories
-    label: Story Blog
-    label_singular: Story
-    folder: _stories
-    extension: md
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    create: true
-    fields:
-      - name: title
-        label: Title
-        widget: string
-      - name: originator
-        label: Originator
-        widget: string
-      - name: external_url
-        label: External URL
-        widget: string
-        required: false
-      - name: date
-        label: Date
-        widget: datetime
-        dateFormat: LL
-        timeFormat: false
-      - name: summary
-        label: Summary
-        widget: string
-        required: false
-      - name: body
-        label: Body
-        widget: markdown
-        required: false
+{% include admin/blog.yml %}
+{% include admin/blog.yml category='story' %}
+{%- raw -%}
   - name: assets
     label: Assets
     label_singular: Asset
@@ -202,3 +144,4 @@ collections:
   #       name: body
   #       widget: markdown
   #       required: false
+{% endraw %}
