@@ -26,9 +26,12 @@ collections:
         label: Title
         widget: string
       - name: originator
-        label: Originator
-        widget: string
-        required: false
+        widget: relation
+        collection: contributors
+        displayFields: display_name
+        searchFields: display_name
+        valueField: name
+        multiple: true
       - name: external_url
         label: External URL
         widget: string
@@ -58,6 +61,18 @@ collections:
         label: Body
         widget: markdown
         required: false
+  - name: contributors
+    label: Contributors
+    folder: _contributors
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { name: name, label: Identifier, widget: string }
+      - { name: display_name, label: Name, widget: string }
+      - { name: homepage, widget: string, required: false }
+      - { name: logo_url, widget: string, required: false }
+
+
   # - name: "draft" # Used in routes, e.g., /admin/collections/blog
   #   label: "Draft" # Used in the UI
   #   folder: "_drafts" # The path to the folder where the documents are stored
