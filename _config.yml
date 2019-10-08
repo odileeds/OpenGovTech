@@ -11,8 +11,13 @@ defaults:
       path: ""
     values:
       layout: page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 
-permalink: /:categories/:year/:month/:day/:title/
+permalink: /:categories/:year-:month-:day-:title/
 
 collections:
   - assets
