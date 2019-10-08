@@ -73,7 +73,22 @@ collections:
       - { name: title, label: Name, widget: string }
       - { name: homepage, widget: string, required: false }
       - { name: logo_url, widget: string, required: false }
-
+  - name: config
+    label: Configuration
+    files:
+      - label: Menu
+        name: menu
+        file: _data/menu.yaml
+        fields:
+          - name: items
+            widget: list
+            fields:
+              - name: page
+                widget: select
+                options: {% endraw -%}
+                    {% for p in site.pages -%}
+                      {% capture b %}{% if a %}{{ a }},{% endif -%}{label: '{{ p.title | default: p.path }}', value: '{{ p.path }}'}{%- endcapture %}{% assign a = b -%}
+                    {% endfor -%}[{{ a }}]{%- raw -%}
 
   # - name: "draft" # Used in routes, e.g., /admin/collections/blog
   #   label: "Draft" # Used in the UI
