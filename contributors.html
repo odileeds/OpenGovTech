@@ -1,0 +1,15 @@
+---
+title: Contributors
+---
+<ul class="contributors">
+  {%- for c in site.contributors %}
+    <li>
+      {%- if c.homepage -%}
+        <a href="{{ c.homepage }}")>{{ c.title }}</a>
+      {%- else -%}
+        {{ c.title }}
+      {%- endif %}
+    </li>
+  {%- endfor %}
+  </ul>
+</section>

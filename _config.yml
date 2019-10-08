@@ -16,3 +16,5 @@ permalink: /:categories/:year/:month/:day/:title/
 
 collections:
   - assets
+  - contributors
+  

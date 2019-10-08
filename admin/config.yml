@@ -68,7 +68,7 @@ collections:
     slug: '{{slug}}'
     fields:
       - { name: name, label: Identifier, widget: string }
-      - { name: display_name, label: Name, widget: string }
+      - { name: title, label: Name, widget: string }
       - { name: homepage, widget: string, required: false }
       - { name: logo_url, widget: string, required: false }
 

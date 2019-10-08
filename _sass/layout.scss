@@ -25,7 +25,7 @@ body {
     }
   }
   > section[role="main"] {
-    * {
+    p, ul, ol, h1, h2, h3 {
       padding-bottom: 0.5em;
     }
   }
