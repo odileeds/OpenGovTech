@@ -29,4 +29,10 @@ body {
       padding-bottom: 0.5em;
     }
   }
+  > footer {
+    display: flex;
+    > * {
+      padding-right: 1rem;
+    }
+  }
 }

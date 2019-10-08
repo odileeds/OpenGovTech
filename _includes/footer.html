@@ -1,12 +1,12 @@
 <footer>
+  {%- if site.author -%}
   <ul>
-    {%- if site.author -%}
-      <li>{{ site.author | escape }}</li>
-    {%- endif -%}
+    <li>Built by {{ site.author | escape }} in {{ "now" | date: "%Y" }}</li>
     {%- if site.email -%}
-      <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+    <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
     {%- endif -%}
   </ul>
+  {%- endif -%}
   <p><a href="{{ 'feedback' | relative_url }}">Improve this site!</a></p>
   {%- include social.html -%}
 </footer>

@@ -4,6 +4,7 @@ description: >
   we are being open with gov tech.
 
 theme: minima
+author: ODI Leeds
 
 defaults:
   - scope:
