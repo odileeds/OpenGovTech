@@ -1,12 +1,11 @@
 ---
 title: Business Rates Dashboard
-originator: [odi-leeds]
+originator:
+  - odi-leeds
 external_url: 'https://odileeds.org/projects/business-rates/'
 date_added: 2019-09-26T00:00:00.000Z
 date_checked: 2019-09-26T00:00:00.000Z
 summary: Visualisation of Business Rates by Council area
 image: /images/business-rates.png
 ---
-ODI Leeds are exploring local council Business Rates data as part of their Open Data Collaboration group.
-They've defined a common format for sharing Business Rates data. Once Local Authorities publish using that format the data
-can be added to the visualisation. There is also a league table page.
+ODI Leeds are exploring local council Business Rates data as part of their Open Data Collaboration group. They've defined a common format for sharing Business Rates data. Once Local Authorities publish using that format the data can be added to the visualisation. There is also a league table page.
