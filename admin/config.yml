@@ -63,9 +63,11 @@ collections:
         required: false
   - name: contributors
     label: Contributors
+    label_singular: Contributor
     folder: _contributors
     create: true
     slug: '{{slug}}'
+    summary: '{{title}}'
     fields:
       - { name: name, label: Identifier, widget: string }
       - { name: title, label: Name, widget: string }
