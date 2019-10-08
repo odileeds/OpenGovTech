@@ -1,8 +1,5 @@
 .site-nav {
-  background-color: $grey-dark;
-  a {
-    color: $white;
-  }
+  background-color: $pop-1-dark;
   path {
     fill: $white;
   }
@@ -10,4 +7,13 @@
 
 body {
   background-color: $grey-light;
+  > header {
+    background-color: $grey-dark;
+    a {
+      color: $white;
+    }
+  }
+  > footer {
+    background-color: $pop-1-dark;
+  }
 }

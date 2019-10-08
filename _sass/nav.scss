@@ -57,7 +57,10 @@
     margin: 0;
     padding: 0;
     li {
-      margin: 0.5em 1rem;
+      margin: 0.5rem;
+      @include large-screen() {
+        margin: 0.5em 1rem 0.5em 0;
+      }
     }
   }
 }

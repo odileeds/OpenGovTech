@@ -12,12 +12,16 @@ body {
     padding: 1rem;
   }
   > header {
-    > h1 {
+    > *  {
       @extend %limit-width;
+    }
+    > h1 {
       padding: 1em 1rem;
     }
     > nav {
-      @extend %limit-width;
+      @include large-screen() {
+        padding: 0.2em 1rem;
+      }
     }
   }
   > section[role="main"] {

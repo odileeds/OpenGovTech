@@ -1,8 +1,9 @@
 $system-fontstack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $open-sans: 'Open Sans', sans-serif;
+$rubik: 'Rubik', sans-serif;
 
 html {
-  font-family: $open-sans;
+  font-family: $rubik;
   font-size: 20px;
 }
 
@@ -14,4 +15,20 @@ body {
   > header {
     h1 { font-size: 2em; }
   }
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.3em;
 }
