@@ -1,6 +1,6 @@
 ---
 title: Business Rates Dashboard
-originator: ODI Leeds
+originator: [odi-leeds]
 external_url: 'https://odileeds.org/projects/business-rates/'
 date_added: 2019-09-26T00:00:00.000Z
 date_checked: 2019-09-26T00:00:00.000Z

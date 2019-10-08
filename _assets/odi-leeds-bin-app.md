@@ -1,6 +1,6 @@
 ---
 title: ODI Leeds Bin App
-originator: ODI Leeds
+originator: [odi-leeds]
 external_url: 'https://odileeds.org/products/bin-app/'
 date_added: 2019-10-06T23:00:00.000Z
 date_checked: ''
