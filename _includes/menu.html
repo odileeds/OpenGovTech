@@ -14,7 +14,7 @@
     </label>
 
     <ul class="menu">
-      {%- for link in site.data.menu -%}
+      {%- for link in site.data.menu.items -%}
         {%- assign link_page = site.pages | where: "path", link.page | first -%}
         {%- assign link_title = link.title | default: link_page.title -%}
         {%- if link_title -%}

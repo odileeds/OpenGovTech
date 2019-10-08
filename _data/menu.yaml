@@ -1,3 +1,4 @@
-- page: manifesto.md
-- page: assets.md
-- page: feedback.html
+items:
+  - page: manifesto.md
+  - page: assets.md
+  - page: feedback.html
