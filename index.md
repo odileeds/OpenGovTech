@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: homepage
 links:
   - image: images/manifesto_brainstorm.jpg
     page: manifesto.md

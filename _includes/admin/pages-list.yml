@@ -1,0 +1,9 @@
+{% for p in site.pages -%}
+  {% capture b -%}
+    {% if a -%}
+      {{ a }},
+    {%- endif -%}
+      {label: '{{ p.title | default: p.path }}', value: '{{ p.path }}'}
+    {%- endcapture %}{% assign a = b -%}
+{% endfor -%}
+[{{ a }}]

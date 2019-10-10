@@ -85,10 +85,34 @@ collections:
             fields:
               - name: page
                 widget: select
-                options: {% endraw -%}
-                    {% for p in site.pages -%}
-                      {% capture b %}{% if a %}{{ a }},{% endif -%}{label: '{{ p.title | default: p.path }}', value: '{{ p.path }}'}{%- endcapture %}{% assign a = b -%}
-                    {% endfor -%}[{{ a }}]{%- raw -%}
+                options: {% endraw -%}{% include admin/pages-list.yml %}{% raw %}
+      - label: Homepage
+        name: homepage
+        file: index.md
+        fields:
+          - name: layout
+            widget: hidden
+            default: homepage
+          - name: links
+            widget: list
+            summary: '{{external_url}} or {{page}}'
+            fields:
+              - name: title
+                widget: string
+                required: false
+              - name: page
+                widget: select
+                options: {% endraw -%}{% include admin/pages-list.yml %}{% raw %}
+                required: false
+              - name: external_url
+                widget: string
+                required: false
+              - name: summary
+                widget: string
+                required: false
+              - name: image
+                widget: image
+                required: false
 
   # - name: "draft" # Used in routes, e.g., /admin/collections/blog
   #   label: "Draft" # Used in the UI
