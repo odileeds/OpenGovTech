@@ -15,3 +15,10 @@
     color: $pop-1-dark;
   }
 }
+
+$contrast-background: hsla(0, 0%, 0%, 60%);
+
+@mixin transparent-overlay() {
+  color: $pop-1-light;
+  background-color: $contrast-background;
+}

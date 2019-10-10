@@ -1,5 +1,4 @@
 $system-fontstack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$open-sans: 'Open Sans', sans-serif;
 $rubik: 'Rubik', sans-serif;
 
 html {
@@ -37,5 +36,11 @@ a {
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+  }
+}
+
+article {
+  p, ul, ol, h1, h2, h3 {
+    padding-bottom: 0.5em;
   }
 }

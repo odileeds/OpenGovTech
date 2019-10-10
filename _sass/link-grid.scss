@@ -1,45 +1,47 @@
-@mixin contrast($contrast-background) {
-  color: change-color(invert($contrast-background), $alpha: 1);
-  background-color: $contrast-background;
-}
-
-$contrast-background: hsla(0, 0%, 0%, 40%);
+$grid-spacing: 1rem;
 
 .link-grid {
   list-style: none;
   margin: 0;
-  display: grid;
-  grid-gap: 1em;
-  grid-auto-rows: minmax(15em, auto);
-  grid-template-columns: repeat( auto-fit, minmax(17em, 1fr) );
   a {
     display: block;
     width: 100%;
     height: 100%;
   }
   article {
-    padding: 1rem;
-    * {
-      padding: 1rem;
-    }
+    padding: $grid-spacing;
   }
+  h1, p {
+    padding-top: $grid-spacing;
+    padding-bottom: $grid-spacing;
+    padding-left: $grid-spacing;
+    padding-right: $grid-spacing;
+  }
+
   li {
     outline: 0.2rem solid transparent;
-    background-color: $white;
+    margin-bottom: $grid-spacing;
+    @include contrast-block();
     &[style*="background-image"] {
-      a {
-        color: $white;
-      }  
       background-position: center;
       background-size: cover;
       article {
         * {
-          @include contrast(hsla(0, 0%, 0%, 60%));
+          @include transparent-overlay();
         }
       }
     }
     &:hover {
-      outline-color: $pop-colour-1;
+      outline-color: $pop-1-dark;
     }
   }    
+  @include large-screen() {
+    display: grid;
+    grid-gap: $grid-spacing;
+    grid-auto-rows: minmax(15em, auto);
+    grid-template-columns: repeat( auto-fit, minmax(17em, 1fr) );
+    li {
+      margin-bottom: 0;
+    }  
+  }
 }
