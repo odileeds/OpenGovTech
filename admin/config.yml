@@ -28,8 +28,8 @@ collections:
       - name: originator
         widget: relation
         collection: contributors
-        displayFields: display_name
-        searchFields: display_name
+        displayFields: title
+        searchFields: title
         valueField: name
         multiple: true
       - name: external_url
