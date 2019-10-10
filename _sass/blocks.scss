@@ -16,11 +16,12 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   > * {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    background-color: $pop-1-light;
+    margin: 0.3rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    @include contrast-block();
   }
 }
 

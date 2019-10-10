@@ -11,13 +11,11 @@
     {% else %}
       {% assign imageStyle = '' %}
     {% endif %}
-    <li>
+    <li style="{{ imageStyle }}">
       <a href="{{ link.external_url | default: targetUrl }}">
-        <article class="link" style="{{ imageStyle }}">
-          <header>
-            <h1>{{ link.title | default: target.title }}</h1>
-            <p>{{ link.summary }}</p>
-          </header>
+        <article>
+          <h1>{{ link.title | default: target.title }}</h1>
+          <p>{{ link.summary }}</p>
         </article>
       </a>
     </li>

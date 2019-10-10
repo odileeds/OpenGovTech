@@ -3,3 +3,15 @@
     @content;
   }
 }
+
+@mixin contrast-block() {
+  background-color: $pop-1-dark;
+  color: $pop-1-light;
+  a { 
+    color: inherit;
+  }
+  &:hover {
+    background-color: $pop-1-light;
+    color: $pop-1-dark;
+  }
+}

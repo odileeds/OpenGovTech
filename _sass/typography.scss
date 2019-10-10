@@ -32,3 +32,10 @@ h2 {
 h3 {
   font-size: 1.3em;
 }
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
