@@ -1,16 +1,15 @@
 ---
 layout: default
 links:
-  -
-    title: '#OpenGovTech'
-    external_url: https://odileeds.org/projects/opengovtech/
-    summary: >
-      Read all about ODI Leeds focus on Open GovTech.
-  -
+  - image: images/manifesto_brainstorm.jpg
     page: manifesto.md
-    image: images/manifesto_brainstorm.jpg
-    summary: >
+    summary: |
       What defines #OpenGovTech?
+  - page: assets.md
+    summary: 'Browse the catalogue of links to #OpenGovTech assets'
+  - external_url: 'https://odileeds.org/projects/opengovtech/'
+    summary: |
+      Read all about ODI Leeds focus on Open GovTech.
+    title: '#OpenGovTech'
 ---
 
-{% include link-grid.html links=page.links %}
